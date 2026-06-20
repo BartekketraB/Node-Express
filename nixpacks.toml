@@ -1,11 +1,1 @@
-[phases.setup]
-nixPkgs = ["nodejs_20"]
-
-[phases.install]
-cmds = ["npx --yes pnpm@10 install --no-frozen-lockfile"]
-
-[phases.build]
-cmds = ["npx --yes pnpm@10 --filter @workspace/api-server run build"]
-
-[start]
-cmd = "node --enable-source-maps artifacts/api-server/dist/index.mjs"
+# Dockerfile is used instead
