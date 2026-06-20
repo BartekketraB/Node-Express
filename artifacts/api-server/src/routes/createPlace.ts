@@ -47,9 +47,7 @@ router.post("/create-place", async (req: Request, res: Response) => {
         displayName: placeName,
         description: "",
         serverSize: 50,
-        template: {
-          placeId: TEMPLATE_PLACE_ID,
-        },
+        template: `universes/${UNIVERSE_ID}/places/${TEMPLATE_PLACE_ID}`,
       }),
     }
   );
